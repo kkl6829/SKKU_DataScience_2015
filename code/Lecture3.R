@@ -15,14 +15,14 @@ rm(list=ls(all=TRUE))
 pollution <- read.csv("/Users/jevinwest/Documents/Teaching/SKKU/Data/Pollution.csv")
 
 # get the population mean
-pop_mean <- mean(Pollution$POP)
+pop_mean <- mean(pollution$POP)
 
 ## functions to explore
 # - mean, variance and standard deviation
 # - class, object type, ls(), x <-95, math
 # - vectors, length of vectors
 # - sequences, x<- 1:10
-# - library, update.packages()
+# - library('igraph'), update.packages(), install.packages('igraph')
 # - plot (label axis, change plot points)
 # - head
 # - pairs
@@ -40,6 +40,16 @@ myfunction <- function(x) {
   
   return (y)
 }
+
+meanfunction <- function(x,y) {
+  
+  z <- (x + y)/2 
+  
+  return(z)
+  
+}
+
+
 
 y <- myfunction(10)
 
